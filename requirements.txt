@@ -1,0 +1,6 @@
+pypdf
+chromadb
+groq
+streamlit
+python-dotenv
+pandas
