@@ -7,7 +7,18 @@ load_dotenv()
 
 MODEL = "openai/gpt-oss-20b" # if Groq says it's retired, pick a current model from console.groq.com/docs/models
 
-client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+def get_api_key():
+    key = os.getenv("GROQ_API_KEY")
+    if key:
+        return key
+    try:
+        import streamlit as st
+        return st.secrets["GROQ_API_KEY"]
+    except Exception:
+        return None
+
+
+client = Groq(api_key=get_api_key())
 db = chromadb.PersistentClient(path="chroma_db")
 collection = db.get_collection("docs")
 
