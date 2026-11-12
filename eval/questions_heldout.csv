@@ -1,0 +1,13 @@
+question,expected
+Which search algorithm uses a stack?,depth
+What are the problems of hill climbing?,plateau
+Who proposed the genetic algorithm?,Holland
+What does BAM stand for?,Bidirectional
+Which activation function is used in the output layer for multi-class problems?,softmax
+Which fragment method is called when it is attached to its activity?,onAttach
+What technique does ART use to compile apps?,ahead
+How do you keep data when the screen rotates?,onSaveInstanceState
+Which Android library is type-safe and annotation-based?,Retrofit
+Which layout stacks its children on top of each other?,FrameLayout
+What is Docker?,couldn't find
+Who invented the Java language?,couldn't find

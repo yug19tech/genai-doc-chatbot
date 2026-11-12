@@ -1,0 +1,29 @@
+question,expected,correct,answer,sources
+Which search algorithm uses a stack?,depth,True,"The search algorithm that uses a stack is **Depth‑First Search (DFS)**.  
+*Source: AI_Viva.pdf, page 11*",AI_Viva.pdf p11; AI_Viva.pdf p11; AI_Viva.pdf p12; AI_Viva.pdf p12
+What are the problems of hill climbing?,plateau,True,"Hill climbing can run into three main problems:
+
+* **Local maximum** – the algorithm reaches a node that is better than all of its neighbours but is not the best overall solution.  
+* **Plateau** – a flat area where all neighbours have equal value, so the algorithm has no direction to move.  
+* **Ridge** – a narrow peak that is hard to climb with single moves, causing the search to miss the optimal path.
+
+(Source: *AI_Viva.pdf*, page 12)",AI_Viva.pdf p12; AI_Viva.pdf p12; AI_Viva.pdf p11; AI_Viva.pdf p11
+Who proposed the genetic algorithm?,Holland,True,"The genetic algorithm was proposed by **John Holland**【AI_Viva.pdf, page 8】.",AI_Viva.pdf p8; AI_Viva.pdf p8; AI_Viva.pdf p9; AI_Viva.pdf p8
+What does BAM stand for?,Bidirectional,False,I couldn't find this in the documents.,AI_Viva.pdf p6; MAD_Viva2.pdf p5; AI_Viva.pdf p8; MAD_Viva2.pdf p6
+Which activation function is used in the output layer for multi-class problems?,softmax,True,"The activation function used in the output layer for multi‑class problems is **Softmax** (e^xi / Σe^xj).  
+Source: *AI_Viva.pdf*, page 5.",AI_Viva.pdf p5; AI_Viva.pdf p5; AI_Viva.pdf p3; AI_Viva.pdf p2
+Which fragment method is called when it is attached to its activity?,onAttach,True,"The fragment method called when it is attached to its activity is **`onAttach()`**.  
+*Source: MAD_Viva2.pdf, page 2*",MAD_Viva2.pdf p2; MAD_Viva2.pdf p2; MAD_Viva2.pdf p1; MAD_Viva2.pdf p3
+What technique does ART use to compile apps?,ahead,True,"ART uses **Ahead‑Of‑Time (AOT) compilation** to compile apps.  
+*Source: MAD_Viva2.pdf, page 1*",MAD_Viva2.pdf p1; MAD_Viva2.pdf p4; MAD_Viva.pdf p2; MAD_Viva2.pdf p1
+How do you keep data when the screen rotates?,onSaveInstanceState,True,"To preserve data across a screen rotation, you can either:
+
+1. **Save the data in `onSaveInstanceState()`** and restore it in `onCreate()` or `onRestoreInstanceState()`.  
+2. **Use a `ViewModel`** that survives configuration changes and holds the data.
+
+These approaches are described in the document.  
+**Source:** *MAD_Viva2.pdf*, page 2.",MAD_Viva2.pdf p1; MAD_Viva2.pdf p2; MAD_Viva.pdf p4; MAD_Viva2.pdf p2
+Which Android library is type-safe and annotation-based?,Retrofit,False,"I couldn't find this in the documents. Source: MAD_Viva2.pdf page 1, page 6; MAD_Viva.pdf page 4.",MAD_Viva2.pdf p1; MAD_Viva2.pdf p6; MAD_Viva2.pdf p1; MAD_Viva.pdf p4
+Which layout stacks its children on top of each other?,FrameLayout,True,"The layout that stacks its children on top of each other is **FrameLayout**【MAD_Viva.pdf, page 1】.",MAD_Viva.pdf p1; MAD_Viva.pdf p1; MAD_Viva2.pdf p4; MAD_Viva.pdf p3
+What is Docker?,couldn't find,True,"I couldn't find this in the documents. (Source: MAD_Viva.pdf, page 1)",MAD_Viva.pdf p1; MAD_Viva2.pdf p1; MAD_Viva2.pdf p6; MAD_Viva2.pdf p1
+Who invented the Java language?,couldn't find,True,I couldn't find this in the documents.,MAD_Viva2.pdf p1; MAD_Viva2.pdf p7; MAD_Viva2.pdf p1; AI_Viva.pdf p6

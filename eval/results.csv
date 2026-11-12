@@ -1,0 +1,25 @@
+question,expected,correct
+Who coined the term Artificial Intelligence and in which year?,1956,True
+What is bias in a neural network?,shift,True
+What is the formula used in the A* algorithm?,g(n),True
+Which data structure does BFS use?,queue,True
+Who introduced fuzzy logic?,Zadeh,True
+What is the output range of the sigmoid function?,0 to 1,True
+What are the steps of a genetic algorithm?,crossover,True
+What is the relation between bias and threshold?,threshold,True
+How do you install SWI-Prolog on Windows?,swi-prolog.org,False
+What is the answer to the Bayes theorem disease example?,15.4,True
+Which file runs first when an Android project starts?,AndroidManifest,True
+In which file is the UI layout code written?,XML,True
+What are the types of menu in Android?,Popup,True
+What is the difference between apply() and commit()?,asynchronous,True
+Which layout is recommended today and why?,ConstraintLayout,True
+What is the difference between a View and a ViewGroup?,container,True
+Which fragment method inflates the layout?,onCreateView,False
+What is Firebase?,Backend,True
+Which permission is needed for internet access?,INTERNET,True
+Which HTTP method is used to read data in REST?,GET,True
+Who is the president of France?,couldn't find,True
+What is the capital of Gujarat?,couldn't find,True
+How do Kotlin coroutines work?,couldn't find,True
+What is the syntax of a Python list comprehension?,couldn't find,True

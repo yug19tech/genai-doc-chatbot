@@ -31,7 +31,7 @@ def chunk_text(text, chunk_size=500, overlap=50):
     return chunks
 
 
-def ingest(chunk_size=500, overlap=50):
+def ingest(chunk_size=300, overlap=50):
     """Read all PDFs in data/, chunk them, and store them in Chroma."""
     client = chromadb.PersistentClient(path=DB_DIR)
 

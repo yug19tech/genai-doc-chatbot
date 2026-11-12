@@ -1,0 +1,80 @@
+question,expected,correct,answer,sources
+Who coined the term Artificial Intelligence and in which year?,1956,True,"The term “Artificial Intelligence” was coined by **John McCarthy in 1956** (at the Dartmouth Conference).  
+*Source: AI_Viva.pdf, page 2*",AI_Viva.pdf p2; AI_Viva.pdf p2; AI_Viva.pdf p2; AI_Viva.pdf p3
+What is bias in a neural network?,shift,True,"Bias (b) is an extra constant parameter added to the weighted sum of a neuron. It shifts the activation function so the network can fit data that does not pass through the origin (i.e., it allows the decision boundary to move away from the origin). In other words, bias can be viewed as a weight attached to a fixed input of +1.  
+(Source: AI_Viva.pdf, page 4)",AI_Viva.pdf p4; AI_Viva.pdf p9; AI_Viva.pdf p4; AI_Viva.pdf p4
+What is the formula used in the A* algorithm?,g(n),True,"The A* algorithm uses the evaluation function  
+
+**f(n) = g(n) + h(n)**  
+
+where **g(n)** is the actual cost from the start node to node *n*, and **h(n)** is the heuristic estimate of the remaining cost to the goal.  
+
+*Source: AI_Viva.pdf, page 11*",AI_Viva.pdf p11; AI_Viva.pdf p11; AI_Viva.pdf p3; AI_Viva.pdf p11
+Which data structure does BFS use?,queue,True,"BFS uses a **queue (FIFO)** data structure.  
+*Source: AI_Viva.pdf, page 10*",AI_Viva.pdf p11; AI_Viva.pdf p10; AI_Viva.pdf p11; AI_Viva.pdf p11
+Who introduced fuzzy logic?,Zadeh,True,"Fuzzy logic was introduced by **Lotfi A. Zadeh** (source: AI_Viva.pdf, page 7).",AI_Viva.pdf p7; AI_Viva.pdf p8; AI_Viva.pdf p7; AI_Viva.pdf p7
+What is the output range of the sigmoid function?,0 to 1,True,"The sigmoid (logistic) activation function outputs values in the range **0 to 1**【AI_Viva.pdf, page 5】.",AI_Viva.pdf p5; AI_Viva.pdf p4; AI_Viva.pdf p5; AI_Viva.pdf p5
+What are the steps of a genetic algorithm?,crossover,True,"The steps of a genetic algorithm are:
+
+1. **Initialisation** – create a random initial population.  
+2. **Fitness evaluation** – compute the fitness of each individual.  
+3. **Selection** – choose fitter parents (e.g., roulette wheel, tournament, rank selection).  
+4. **Crossover (recombination)** – combine two parents to create offspring (single‑point, two‑point, uniform, etc.).  
+5. **Mutation** – randomly alter some genes in the offspring.
+
+(Source: *AI_Viva.pdf*, page 8)",AI_Viva.pdf p8; AI_Viva.pdf p8; AI_Viva.pdf p8; AI_Viva.pdf p8
+What is the relation between bias and threshold?,threshold,True,"Bias is the negative of the threshold. In other words, bias = –threshold, so writing the condition as “net – threshold ≥ 0” is equivalent to “net + b ≥ 0.”  
+(Source: AI_Viva.pdf, page 5)",AI_Viva.pdf p4; AI_Viva.pdf p5; AI_Viva.pdf p4; AI_Viva.pdf p9
+How do you install SWI-Prolog on Windows?,swi-prolog.org,True,"To install SWI‑Prolog on Windows, follow the steps shown in the document:
+
+1. Open the official site **www.swi‑prolog.org** and go to the **Download** section.  
+2. Download the **Stable release installer for Windows (64‑bit .exe)**.  
+3. Run the installer, accept the license agreement, and click **Next**.  
+4. Tick the options **“Add swipl to the system PATH”** and **“Associate .pl files with SWI‑Prolog”**.  
+5. Choose the install folder (the default is fine) and click **Install**, then **Finish**.  
+6. Open **SWI‑Prolog (swipl‑win)** from the Start menu; you should see the prompt `?-`.
+
+*Source: AI_Viva.pdf, page 6*",AI_Viva.pdf p6; AI_Viva.pdf p6; AI_Viva.pdf p6; AI_Viva.pdf p6
+What is the answer to the Bayes theorem disease example?,15.4,True,"The probability that a person actually has the disease given a positive test result is about **15.4 %** (P(D | +) ≈ 0.154).  
+*Source: AI_Viva.pdf, page 10*",AI_Viva.pdf p10; AI_Viva.pdf p10; AI_Viva.pdf p10; AI_Viva.pdf p10
+Which file runs first when an Android project starts?,AndroidManifest,True,"The first code that actually runs when an Android app starts is the `onCreate()` method of the **Application** class (the class specified in the `android:name` attribute of the `<application>` tag).  
+Before that, the system reads **AndroidManifest.xml** to locate the launcher activity, but the first executable code is the Application’s `onCreate()`.
+
+*Source: MAD_Viva2.pdf, page 4*",MAD_Viva2.pdf p4; MAD_Viva2.pdf p4; MAD_Viva2.pdf p4; MAD_Viva2.pdf p4
+In which file is the UI layout code written?,XML,True,"The UI layout code is written in an XML file inside the `res/layout` folder, for example `activity_main.xml` (MAD_Viva2.pdf, page 3).",MAD_Viva2.pdf p3; MAD_Viva.pdf p1; MAD_Viva.pdf p4; MAD_Viva.pdf p1
+What are the types of menu in Android?,Popup,True,"The types of menu in Android are:
+
+1. **Options Menu** – the primary menu for an activity (shown in the app bar or the three‑dot overflow).  
+2. **Context Menu** – a floating menu attached to a specific view, shown on click.  
+3. **Popup Menu** – a lightweight menu that appears near a view (created with `PopupMenu`).
+
+*Source: MAD_Viva2.pdf, page 5*",MAD_Viva2.pdf p5; MAD_Viva2.pdf p5; MAD_Viva.pdf p3; MAD_Viva2.pdf p5
+What is the difference between apply() and commit()?,asynchronous,True,"apply() is asynchronous and returns nothing (it’s the preferred choice).  
+commit() is synchronous and returns a boolean indicating whether the change succeeded.  
+
+Source: MAD_Viva.pdf, page 5.",MAD_Viva.pdf p5; MAD_Viva2.pdf p2; MAD_Viva2.pdf p2; MAD_Viva2.pdf p1
+Which layout is recommended today and why?,ConstraintLayout,True,"The layout recommended today is **ConstraintLayout**.  
+It is preferred because it positions views using constraints to siblings and the parent, creating a flat view hierarchy that improves performance and avoids deep nesting, which makes rendering faster.  
+
+*Source: MAD_Viva.pdf, page 1*",MAD_Viva.pdf p1; MAD_Viva.pdf p3; MAD_Viva.pdf p2; MAD_Viva.pdf p2
+What is the difference between a View and a ViewGroup?,container,True,"A **View** is a basic UI element that displays content on the screen.  
+A **ViewGroup** is a special type of View that can contain other Views, acting as an invisible container that arranges its child Views in a hierarchy.  
+
+Source: *MAD_Viva.pdf*, page 3.",MAD_Viva.pdf p3; MAD_Viva.pdf p1; MAD_Viva2.pdf p2; MAD_Viva.pdf p1
+Which fragment method inflates the layout?,onCreateView,True,"The fragment method that inflates the layout is **`onCreateView()`**.  
+Source: *MAD_Viva2.pdf*, page 2.",MAD_Viva.pdf p1; MAD_Viva2.pdf p2; MAD_Viva2.pdf p2; MAD_Viva.pdf p1
+What is Firebase?,Backend,True,"Firebase is Google's Backend‑as‑a‑Service (BaaS) platform that provides apps with a ready‑made backend—including database, authentication, storage, and notifications—without the need to write or maintain server code【MAD_Viva2.pdf, page 6】.",MAD_Viva2.pdf p7; MAD_Viva2.pdf p6; MAD_Viva2.pdf p6; MAD_Viva2.pdf p6
+Which permission is needed for internet access?,INTERNET,True,"The permission required for internet access is:
+
+```
+android.permission.INTERNET
+```
+
+(Source: MAD_Viva2.pdf, page 7)",MAD_Viva2.pdf p7; MAD_Viva.pdf p2; MAD_Viva.pdf p3; MAD_Viva.pdf p2
+Which HTTP method is used to read data in REST?,GET,True,"The HTTP method used to read data in REST is **GET**【MAD_Viva2.pdf, page 7】.",MAD_Viva2.pdf p7; MAD_Viva2.pdf p7; MAD_Viva2.pdf p7; MAD_Viva2.pdf p7
+Who is the president of France?,couldn't find,True,"I couldn't find this in the documents.  
+Source: MAD_Viva.pdf page 2; AI_Viva.pdf page 9; MAD_Viva2.pdf page 1; AI_Viva.pdf page 6.",MAD_Viva.pdf p2; AI_Viva.pdf p9; MAD_Viva2.pdf p1; AI_Viva.pdf p6
+What is the capital of Gujarat?,couldn't find,True,I couldn't find this in the documents.,MAD_Viva.pdf p2; AI_Viva.pdf p3; MAD_Viva2.pdf p5; AI_Viva.pdf p8
+How do Kotlin coroutines work?,couldn't find,True,I couldn't find this in the documents.,MAD_Viva2.pdf p3; MAD_Viva2.pdf p2; MAD_Viva2.pdf p7; AI_Viva.pdf p2
+What is the syntax of a Python list comprehension?,couldn't find,True,"I couldn't find this in the documents.  
+Source: AI_Viva.pdf page 6; MAD_Viva2.pdf page 6; MAD_Viva.pdf page 1",AI_Viva.pdf p6; MAD_Viva2.pdf p6; MAD_Viva.pdf p1; AI_Viva.pdf p6
