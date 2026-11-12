@@ -1,35 +1,13 @@
 import os
-import importlib
-try:
-    load_dotenv = importlib.import_module("dotenv").load_dotenv
-except ModuleNotFoundError as exc:
-    if exc.name == "dotenv":
-        raise ModuleNotFoundError(
-            "python-dotenv is required. Install it with: python -m pip install python-dotenv"
-        ) from exc
-    raise
-try:
-    Groq = importlib.import_module("groq").Groq
-except ModuleNotFoundError as exc:
-    if exc.name == "groq":
-        raise ModuleNotFoundError(
-            "groq is required. Install it with: python -m pip install groq"
-        ) from exc
-    raise
+import chromadb
+from dotenv import load_dotenv
+from groq import Groq
 
 load_dotenv()
 
-MODEL = "llama-3.3-70b-versatile"  # if Groq says it's retired, pick a current model from console.groq.com/docs/models
+MODEL = "openai/gpt-oss-20b" # if Groq says it's retired, pick a current model from console.groq.com/docs/models
 
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
-try:
-    chromadb = importlib.import_module("chromadb")
-except ModuleNotFoundError as exc:
-    if exc.name == "chromadb":
-        raise ModuleNotFoundError(
-            "chromadb is required. Install it with: python -m pip install chromadb"
-        ) from exc
-    raise
 db = chromadb.PersistentClient(path="chroma_db")
 collection = db.get_collection("docs")
 
